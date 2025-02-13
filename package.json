@@ -6,10 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "concurrently \"node dist/index.js\" \"node dist/scheduler/app.js\"",
     "build": "tsc",
-    "schd": "tsc --noEmit && node --loader ts-node/esm src/scheduler/app.ts",
-    "serve": "concurrently \"nodemon dist/index.js\" \"nodemon dist/scheduler/app.js\"",
   },
   "keywords": [],
   "author": "",
